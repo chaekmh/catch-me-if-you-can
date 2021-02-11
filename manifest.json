@@ -1,0 +1,13 @@
+{
+  "name": "Amazon product sorter",
+  "version": "1.0",
+  "description": "This extension will sort amazon products by its review count, most clicked, or most viewed",
+  "manifest_version": 2,
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "js": ["./main.js"]
+    }
+  ]
+}
